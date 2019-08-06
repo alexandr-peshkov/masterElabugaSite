@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Профессиональные услуги мастеров">
+    <!-- подключение основных стилей -->
     <link rel="stylesheet" href="sass/style.css">
+    <!-- файл сброса стилей -->
     <link rel="stylesheet" href="css/reset.css">
+    <!-- подключение шрифтов -->
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Частный мастер</title>
 </head>
@@ -42,23 +46,27 @@
             </header>
 
         </div>
+        <!-- end wrap -->
     </div>
     <!-- header-line -->
 
     <section class="background__home">
-        <section class="masters">
-            <h1> Профессиональные мастера<br>
-                с Многолетним стажем</h1>
-            <form action="index.php" class="header__form">
-                <select name="master" id="">
-                    <option>Выберите мастера</option>
-                    <option>Сантехник</option>
-                    <option>Электрик</option>
-                </select>
-                <a href="#" class="masters__button">найти мастера</a>
-            </form>
-            <section class="masters__work">Выполнено более<span>&nbsp 350</span> работ</section>
-        </section>
+        <div class="wrap">
+            <section class="masters">
+                <h1> Профессиональные мастера<br>
+                    с Многолетним стажем</h1>
+                <form action="index.php" class="header__form">
+                    <select name="master" id="">
+                        <option>Выберите мастера</option>
+                        <option>Сантехник</option>
+                        <option>Электрик</option>
+                    </select>
+                    <a href="#" class="masters__button">найти мастера</a>
+                </form>
+                <section class="masters__work">Выполнено более<span>&nbsp 350</span> работ</section>
+            </section>
+        </div>
+        <!-- end wrap -->
     </section>
 
     <!-- section two -->
@@ -179,13 +187,35 @@
                         </div>
                     </div>
                 </div>
-
-
+                <!-- end appeal__item  -->
             </div>
+            <!-- end appeal__items  -->
         </div>
-        </div>
+        <!-- end wrap -->
     </section>
-
+    <!-- end section appeal -->
+    <section class="form__phone">
+        <div class="wrap">
+            <div class="form__wrap">
+                <div class="form__title">Нужна помощь при выборе мастера?
+                    заполните форму и мы вам перезвоним!</div>
+                <div class="form__time">(в течении 15 минут)</div>
+                <div class="form__field">
+                    <input type="text" id="phone" class="input__phone" placeholder="+7 (951)-898-88-11">
+                    <a href="" class="masters__button">Жду звонка</a>
+                </div>
+            </div>
+            <!-- end form__wrap -->
+        </div>
+        <!-- end wrap -->
+    </section>
+    <!-- подключение JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- подключение Masked Input -->
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <!-- подключение main.js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
