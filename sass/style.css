@@ -5,6 +5,9 @@ body {
   line-height: 1.4;
   font-size: 16px;
   color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -14,7 +17,7 @@ a {
 .header-line {
   background: rgba(2, 69, 120, 0.8);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 82px;
   color: #ffffff;
 }
@@ -30,15 +33,15 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 82px;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -89,8 +92,9 @@ a {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
 }
 
 .navigation ul a {
@@ -137,8 +141,8 @@ a {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #ffffff;
   margin-bottom: 100px;
 }
@@ -154,16 +158,21 @@ a {
 }
 
 form.header__form {
-  width: 100%;
   margin-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 select[name="master"] {
-  width: 700px;
+  width: 70%;
   margin-right: 44px;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-image: url(../images/down-button.svg);
   background-size: 10px;
   background-repeat: no-repeat;
@@ -171,19 +180,13 @@ select[name="master"] {
   font-family: "Exo 2", sans-serif;
 }
 
-input,
-select,
-option {
+input, select, option {
   padding: 20px;
   outline: none;
 }
 
 input[placeholder] {
   font-size: 20px;
-}
-
-input[type="text"] {
-  background: #000;
 }
 
 .masters__button {
@@ -219,15 +222,15 @@ input[type="text"] {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   margin: 100px 0 0 0;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .services__catalog__item {
@@ -253,7 +256,7 @@ input[type="text"] {
 
 .services__catalog__item__buttons {
   background: #FF9200;
-  padding: 20px 5px;
+  padding: 20px 0px;
   text-align: center;
   color: #ffffff;
   display: inline-block;
@@ -267,9 +270,8 @@ input[type="text"] {
 .appeal {
   background-image: url(../images/substrate_bg.svg);
   background-size: 100%;
-  margin: 100px 0 0 0;
-  height: 100vh;
   background-repeat: no-repeat;
+  padding: 0 0 50px 0;
 }
 
 .appeal h3 {
@@ -277,22 +279,21 @@ input[type="text"] {
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 100px 0;
+  padding: 50px 0;
+  margin: 0;
 }
 
 .appeal__items {
   display: -ms-grid;
   display: grid;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  grid-gap: 20px;
+      justify-content: space-around;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
 }
 
 .appeal__item {
-  margin-bottom: 20px;
-  margin-right: 20px;
   color: #fff;
 }
 
@@ -303,30 +304,74 @@ input[type="text"] {
 
 .orange__block {
   background-color: #FF9200;
-  width: 350px;
-  height: 270px;
+  height: 300px;
 }
 
 .appeal__wrap {
   display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   text-align: center;
 }
 
 .blue__block {
   background-color: #125588;
-  width: 350px;
-  height: 270px;
+  height: 300px;
 }
 
 .appeal__content img {
   margin-bottom: 10px;
 }
 
+.form__phone {
+  height: 300px;
+  background: rgba(2, 69, 120, 0.5);
+  color: #ffffff;
+}
+
+.form__wrap {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 300px;
+}
+
+.form__title {
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 36px;
+  width: 760px;
+  margin-bottom: 10px;
+}
+
+.form__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__time {
+  font-size: 18px;
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.input__phone {
+  width: 330px;
+  margin-right: 20px;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */

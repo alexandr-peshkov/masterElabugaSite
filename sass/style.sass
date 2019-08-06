@@ -3,8 +3,7 @@ $family : 'Exo 2', sans-serif
 //colors
 $orange : #FF9200
 $dark_blue : #125588
-$block_width: 350px
-$block_height: 270px
+$block_height: 250px
 
 
     
@@ -15,6 +14,9 @@ body
     line-height: 1.4
     font-size: 16px
     color:#000
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 
 a
     display: block        
@@ -67,6 +69,7 @@ a
         ul
             display: flex
             flex-direction: row
+            list-style-type: none
             a
                 color:#fff
                 text-decoration: none
@@ -96,7 +99,7 @@ a
     background-position: 50% 50%
     height: 30px
 
-//    end header
+// -------------------------------------------------------end header ---------------------------------------------------->
 
 .background__home
     background-image: url(../images/electric.svg)
@@ -117,11 +120,12 @@ a
     margin-top: 150px
     margin-bottom: 70px
 form.header__form
-    width: 100%
     margin-bottom: 44px
+    display: flex
+    justify-content: space-between
     
 select[name="master"]
-    width: 700px
+    width: 70%
     margin-right: 44px
     appearance: none
     background-image: url(../images/down-button.svg)
@@ -135,7 +139,8 @@ input,select,option
 input[placeholder]
     font-size: 20px
 input[type="text"]
-    background: #000        
+    border:none
+    outline:none     
 .masters__button
     background: $orange
     padding: 20px 70px
@@ -181,7 +186,7 @@ input[type="text"]
     // text-transform: uppercase
 .services__catalog__item__buttons
     background: $orange
-    padding: 20px 5px
+    padding: 20px 0px
     text-align: center
     color: #ffffff
     display: inline-block 
@@ -192,28 +197,27 @@ input[type="text"]
     width: 100%
     text-decoration: underline
 
-    // третий блок
+      //  ------------------------------------------------------третий блок----------------------------------------------------->
 
 .appeal
     background-image: url(../images/substrate_bg.svg)
     background-size: 100%
-    margin: 100px 0 0 0
-    height: 100vh
     background-repeat: no-repeat
+    padding: 0 0 50px 0    
     h3
         text-align: center
         font-size: 40px
         font-weight: bold
         text-transform: uppercase
-        padding: 100px 0 
+        padding: 50px 0 
+        margin: 0
 .appeal__items
     display: grid
     justify-content: space-around
-    grid-gap: 20px
     grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 40px
+   
 .appeal__item
-    margin-bottom: 20px
-    margin-right: 20px
     color:#fff
    
 .appeal__title
@@ -221,8 +225,7 @@ input[type="text"]
     text-transform: uppercase
 .orange__block
     background-color: $orange
-    width: $block_width
-    height: $block_height
+    height: 300px
 .appeal__wrap
     display: grid
     align-content: center
@@ -231,12 +234,39 @@ input[type="text"]
     text-align: center
 .blue__block
     background-color: $dark_blue
-    width: $block_width
-    height: $block_height  
-// .appeal__content
-//     background-image: url(../images/appeal__content.svg)
-//     background-repeat: no-repeat
-//     background-position: 50% 50%
-//     height: 100px
+    height: 300px
 .appeal__content img
-    margin-bottom: 10px    
+    margin-bottom: 10px 
+
+    // ------------------------------------------------------четвертый блок ----------------------------------------------------->
+
+.form__phone
+    height: 300px
+    background: rgba(2, 69, 120, 0.5) 
+    color: #ffffff    
+.form__wrap
+    display: grid 
+    justify-content: center
+    align-content: center
+    height: 300px
+
+.form__title
+    line-height: 43px
+    text-align: center
+    letter-spacing: 0.05em
+    font-size: 36px
+    width: 760px
+    margin-bottom: 10px
+.form__field
+    display: flex
+    justify-content: center
+ 
+
+.form__time
+    font-size: 18px
+    text-align: right
+    margin-bottom: 40px    
+.input__phone
+    width: 330px
+    margin-right: 20px
+    font-size: 20px           
