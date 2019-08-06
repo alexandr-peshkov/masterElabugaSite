@@ -1,0 +1,2 @@
+navigationClick.onclick = function(){
+};
