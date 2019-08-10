@@ -1,5 +1,6 @@
 // variables
 $family : 'Exo 2', sans-serif
+$family2: 'Roboto Slab', serif
 //colors
 $orange : #FF9200
 $dark_blue : #125588
@@ -14,8 +15,8 @@ body
     line-height: 1.4
     font-size: 16px
     color:#000
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility
+    -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
 
 a
@@ -116,7 +117,7 @@ a
     text-transform: uppercase
     text-align: center
     font-weight: bold
-    text-shadow: 3px 3px 4px #000000;
+    text-shadow: 3px 3px 4px #000000
     margin-top: 150px
     margin-bottom: 70px
 form.header__form
@@ -143,11 +144,10 @@ input[type="text"]
     outline:none     
 .masters__button
     background: $orange
-    padding: 20px 70px
+    padding: 20px 
     text-decoration: none
     color:#fff
     text-transform: uppercase
-    display: inline-block
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 .masters__work
     font-size: 18px
@@ -269,4 +269,71 @@ input[type="text"]
 .input__phone
     width: 330px
     margin-right: 20px
-    font-size: 20px           
+    font-size: 20px
+
+// ------------------------------------------------------четвертый блок ----------------------------------------------------->
+.card__masters
+    background-image: url(../images/bricks.svg)
+    font-family: $family2
+    h3
+        padding: 50px 0
+        text-align: center
+        font-size: 40px
+        text-transform: uppercase
+.card__background
+    background: #fff
+    height: 800px
+
+.card
+    display: flex
+    font-size: 14px
+    justify-content: space-around
+    align-content: center
+    padding: 20px    
+.card__img
+   
+.card__name
+    font-size: 20px
+    text-transform: uppercase
+.card__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.card__position
+    background: #FF9200
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color:#fff
+    padding: 2px 5px
+    font-weight: normal
+    display: inline-block   
+.card__description
+    p
+        margin: 0
+        font-style: italic
+        font-size: 14px
+        padding: 10px 0
+        background: #EAE5E4
+        display: block
+
+.card__contact
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   text-align: center
+
+.card__request
+.card__chat
+    a
+        text-transform: uppercase
+.card__phone
+    font-size: 16px
+.card__line
+    background: #024578
+    border: 1px solid #024578
+    opacity: 0.25
+    width: 1000px
+    margin: 0 auto                 
+   
+        
+                                                   
