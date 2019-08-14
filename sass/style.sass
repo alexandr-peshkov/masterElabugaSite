@@ -11,7 +11,7 @@ $block_height: 250px
 body
     padding: 0
     margin: 0
-    font-family: $family
+    font-family: $family2
     line-height: 1.4
     font-size: 16px
     color:#000
@@ -44,11 +44,11 @@ a
     background-repeat: no-repeat
     padding-left: 70px
 .logo-title
-    font-size: 24px
+    font-size: 21px
     text-transform: uppercase
 .logo-description
     text-transform: uppercase
-    font-size: 14px 
+    font-size: 12px 
 .contact
     line-height: 1.7
     border-left: 3px solid $dark_blue
@@ -78,6 +78,7 @@ a
                 padding: 10px
                 text-transform: uppercase
                 font-weight: bold
+                font-size: 14px    
 
                 &.active
                     color: $orange
@@ -137,6 +138,8 @@ select[name="master"]
 input,select,option
     padding: 20px
     outline: none
+option
+       
 input[placeholder]
     font-size: 20px
 input[type="text"]
@@ -144,7 +147,7 @@ input[type="text"]
     outline:none     
 .masters__button
     background: $orange
-    padding: 20px 
+    padding: 20px 70px 
     text-decoration: none
     color:#fff
     text-transform: uppercase
@@ -163,6 +166,9 @@ input[type="text"]
     text-transform: uppercase
     text-align: center
     margin-bottom: 100px
+.services__catalog__item
+    a
+        text-decoration: none    
 .services__catalog__items
     display: flex
     flex-direction: row
@@ -192,8 +198,8 @@ input[type="text"]
     display: inline-block 
     text-decoration: none
     text-transform: uppercase
-    font-size: 16px
-    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50)
+    font-size: 14px
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50)
     width: 100%
     text-decoration: underline
 
@@ -225,7 +231,7 @@ input[type="text"]
     text-transform: uppercase
 .orange__block
     background-color: $orange
-    height: 300px
+    height: 250px
 .appeal__wrap
     display: grid
     align-content: center
@@ -234,21 +240,21 @@ input[type="text"]
     text-align: center
 .blue__block
     background-color: $dark_blue
-    height: 300px
+    height: 250px
 .appeal__content img
     margin-bottom: 10px 
 
     // ------------------------------------------------------четвертый блок ----------------------------------------------------->
 
 .form__phone
-    height: 300px
+    min-height: 400px
     background: rgba(2, 69, 120, 0.5) 
     color: #ffffff    
 .form__wrap
     display: grid 
     justify-content: center
     align-content: center
-    height: 300px
+    min-height: 400px
 
 .form__title
     line-height: 43px
@@ -270,7 +276,9 @@ input[type="text"]
     width: 330px
     margin-right: 20px
     font-size: 20px
-
+form
+    a
+        padding: 20px 70px
 // ------------------------------------------------------четвертый блок ----------------------------------------------------->
 .card__masters
     background-image: url(../images/bricks.svg)
@@ -315,6 +323,15 @@ input[type="text"]
         padding: 10px 0
         background: #EAE5E4
         display: block
+.star
+        background-image: url(../images/star.svg)
+        width: 95px
+        height: 19px
+        background-repeat: repeat-x
+        display: inline-block
+        vertical-align: middle
+.card__rating
+
 
 .card__contact
    display: flex
@@ -333,7 +350,41 @@ input[type="text"]
     border: 1px solid #024578
     opacity: 0.25
     width: 1000px
-    margin: 0 auto                 
-   
-        
-                                                   
+    margin: 0 auto
+
+footer
+    & .footer__title
+        font-size: 30px
+        text-align: center
+        text-transform: uppercase
+        text-decoration: underline 
+.footer-flex
+    display: flex
+    justify-content: space-around
+    padding: 20px 0
+    height: 300px
+.footer-desc
+    width: 300px
+    text-align: center
+.footer__links
+    a
+        color: #024578
+        padding: 3px 0
+    ul
+        list-style-type: none
+        margin: 20px 0 0 0
+        padding: 0
+.footer__ears
+    text-transform: uppercase
+    color: #FF9200
+    font-weight: bold
+    padding: 5px
+    display: inline-block
+.footer__line
+    background: #024578
+    min-height: 115px
+.footer-bottom__flex
+    display: flex        
+
+
+

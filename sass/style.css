@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Roboto Slab", serif;
   line-height: 1.4;
   font-size: 16px;
   color: #000;
@@ -53,13 +53,13 @@ a {
 }
 
 .logo-title {
-  font-size: 24px;
+  font-size: 21px;
   text-transform: uppercase;
 }
 
 .logo-description {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .contact {
@@ -104,6 +104,7 @@ a {
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .navigation ul a.active {
@@ -191,7 +192,7 @@ input[placeholder] {
 
 .masters__button {
   background: #FF9200;
-  padding: 20px;
+  padding: 20px 70px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -213,6 +214,10 @@ input[placeholder] {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.services__catalog__item a {
+  text-decoration: none;
 }
 
 .services__catalog__items {
@@ -261,7 +266,8 @@ input[placeholder] {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   width: 100%;
   text-decoration: underline;
 }
@@ -303,7 +309,7 @@ input[placeholder] {
 
 .orange__block {
   background-color: #FF9200;
-  height: 300px;
+  height: 250px;
 }
 
 .appeal__wrap {
@@ -320,7 +326,7 @@ input[placeholder] {
 
 .blue__block {
   background-color: #125588;
-  height: 300px;
+  height: 250px;
 }
 
 .appeal__content img {
@@ -328,7 +334,7 @@ input[placeholder] {
 }
 
 .form__phone {
-  height: 300px;
+  min-height: 400px;
   background: rgba(2, 69, 120, 0.5);
   color: #ffffff;
 }
@@ -341,7 +347,7 @@ input[placeholder] {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 300px;
+  min-height: 400px;
 }
 
 .form__title {
@@ -372,6 +378,10 @@ input[placeholder] {
   width: 330px;
   margin-right: 20px;
   font-size: 20px;
+}
+
+form a {
+  padding: 20px 70px;
 }
 
 .card__masters {
@@ -440,6 +450,15 @@ input[placeholder] {
   display: block;
 }
 
+.star {
+  background-image: url(../images/star.svg);
+  width: 95px;
+  height: 19px;
+  background-repeat: repeat-x;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .card__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,5 +487,57 @@ input[placeholder] {
   opacity: 0.25;
   width: 1000px;
   margin: 0 auto;
+}
+
+footer .footer__title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.footer-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+  height: 300px;
+}
+
+.footer-desc {
+  width: 300px;
+  text-align: center;
+}
+
+.footer__links a {
+  color: #024578;
+  padding: 3px 0;
+}
+
+.footer__links ul {
+  list-style-type: none;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.footer__ears {
+  text-transform: uppercase;
+  color: #FF9200;
+  font-weight: bold;
+  padding: 5px;
+  display: inline-block;
+}
+
+.footer__line {
+  background: #024578;
+  min-height: 115px;
+}
+
+.footer-bottom__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
