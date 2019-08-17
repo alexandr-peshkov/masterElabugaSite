@@ -6,7 +6,6 @@ $orange : #FF9200
 $dark_blue : #125588
 $block_height: 250px
 
-
     
 body
     padding: 0
@@ -21,89 +20,12 @@ body
 
 a
     display: block        
-
-.header-line
-     background: rgba(2, 69, 120, 0.8)
-     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-     height: 82px
-     color: #ffffff    
-        
-.wrap
-    width: 1120px
-    margin: 0 auto
-.header-navigation
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    min-height: 82px
-    align-items: center
-.logo
-    background-image: url(../images/wall.svg)
-    background-position: 0 50%
-    background-size: 47px 47px
-    background-repeat: no-repeat
-    padding-left: 70px
-.logo-title
-    font-size: 21px
-    text-transform: uppercase
-.logo-description
-    text-transform: uppercase
-    font-size: 12px 
-.contact
-    line-height: 1.7
-    border-left: 3px solid $dark_blue
-    border-right: 3px solid $dark_blue
-    padding-left: 35px   
-    padding-right: 35px   
-.geo-city
-    background-image: url(../images/location-pointer.svg)
-    background-size: contain
-    background-repeat: no-repeat
-    text-transform: uppercase
-    padding-left: 30px
-   
-.geo-city span
-    border-bottom: 1px solid #fff
-.contact-phone
-    padding-left: 5px
-.navigation
-        ul
-            display: flex
-            flex-direction: row
-            list-style-type: none
-            a
-                color:#fff
-                text-decoration: none
-                display: inline-block
-                padding: 10px
-                text-transform: uppercase
-                font-weight: bold
-                font-size: 14px    
-
-                &.active
-                    color: $orange
-                &:hover
-                    text-decoration: underline     
-.navigation-hidden
-                    
-.navigation-active
-    height: 60px
-.navigation__active
-    padding-bottom: 5px 
-    text-transform: uppercase 
-    font-size: 14px
-    display: none
-    
-.navigation__active__bar
-    background-image: url(../images/list-menu.svg)
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: 50% 50%
-    height: 30px
+@import "grid"
+@import "header"
 
 // -------------------------------------------------------end header ---------------------------------------------------->
 
-.background__home
+.background
     background-image: url(../images/electric.svg)
     background-repeat: no-repeat
     background-size: 100%
@@ -113,7 +35,7 @@ a
     color: #ffffff
     margin-bottom: 100px   
 
-.masters h1
+.masters__title
     font-size: 40px
     text-transform: uppercase
     text-align: center
@@ -121,7 +43,7 @@ a
     text-shadow: 3px 3px 4px #000000
     margin-top: 150px
     margin-bottom: 70px
-form.header__form
+.masters-form
     margin-bottom: 44px
     display: flex
     justify-content: space-between
@@ -139,13 +61,13 @@ input,select,option
     padding: 20px
     outline: none
 option
-       
+    height: 200px 
 input[placeholder]
     font-size: 20px
 input[type="text"]
     border:none
     outline:none     
-.masters__button
+.button
     background: $orange
     padding: 20px 70px 
     text-decoration: none
@@ -161,36 +83,37 @@ input[type="text"]
         font-size: 30px
 
 
-.services__catalog h2
+.services h2
     font-size: 40px
     text-transform: uppercase
     text-align: center
     margin-bottom: 100px
-.services__catalog__item
+.services-catalog
     a
         text-decoration: none    
-.services__catalog__items
+.service
     display: flex
     flex-direction: row
     justify-content: space-between
     text-align: center
     margin: 100px 0 0 0 
     flex-wrap: wrap
-.services__catalog__item
+.services-catalog
     margin-bottom: 50px
-.services__catalog__item:last-child
+    img
+        height: 170px
+        width: 250px
+.services-catalog:last-child
     margin-bottom: 0px     
-.services__catalog__item img
-    height: 170px
-    width: 250px
-.services__catalog__item__title
+    
+.services-catalog__title
     margin: 20px 0
     text-align: center
     font-size: 20px
     text-decoration: none
     color: #000
     // text-transform: uppercase
-.services__catalog__item__buttons
+.services-catalog__buttons
     background: $orange
     padding: 20px 0px
     text-align: center
@@ -217,62 +140,59 @@ input[type="text"]
         text-transform: uppercase
         padding: 50px 0 
         margin: 0
-.appeal__items
+.appeal-catalog
     display: grid
     justify-content: space-around
     grid-template-columns: 1fr 1fr 1fr
     grid-gap: 40px
    
-.appeal__item
+.appeal-item
     color:#fff
    
-.appeal__title
+.appeal-content__title
     text-align: center
     text-transform: uppercase
-.orange__block
-    background-color: $orange
-    height: 250px
-.appeal__wrap
+.appeal-block
+    background-color: rgba(2, 69, 120, 0.6)
+    height: 250px  
+.appeal-wrap
     display: grid
     align-content: center
     justify-content: center
     height: 100%
     text-align: center
-.blue__block
-    background-color: $dark_blue
-    height: 250px
-.appeal__content img
+.appeal-content img
     margin-bottom: 10px 
 
     // ------------------------------------------------------четвертый блок ----------------------------------------------------->
 
-.form__phone
+.form-phone
     min-height: 400px
     background: rgba(2, 69, 120, 0.5) 
     color: #ffffff    
-.form__wrap
+.form-wrap
     display: grid 
     justify-content: center
     align-content: center
     min-height: 400px
 
-.form__title
+.form-title
     line-height: 43px
     text-align: center
     letter-spacing: 0.05em
     font-size: 36px
     width: 760px
     margin-bottom: 10px
-.form__field
+.form-field
     display: flex
     justify-content: center
  
 
-.form__time
+.form-time
     font-size: 18px
     text-align: right
     margin-bottom: 40px    
-.input__phone
+.form-field__inputphone
     width: 330px
     margin-right: 20px
     font-size: 20px
@@ -280,7 +200,7 @@ form
     a
         padding: 20px 70px
 // ------------------------------------------------------четвертый блок ----------------------------------------------------->
-.card__masters
+.card-masters
     background-image: url(../images/bricks.svg)
     font-family: $family2
     h3
@@ -288,7 +208,7 @@ form
         text-align: center
         font-size: 40px
         text-transform: uppercase
-.card__background
+.card-background
     background: #fff
     height: 800px
 
@@ -298,31 +218,32 @@ form
     justify-content: space-around
     align-content: center
     padding: 20px    
-.card__img
+.card-img
    
-.card__name
+.card-info__name
     font-size: 20px
     text-transform: uppercase
-.card__info
+.card-info
     display: flex
     flex-direction: column
     justify-content: space-between
 
-.card__position
+.card-info__position
     background: #FF9200
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     color:#fff
     padding: 2px 5px
     font-weight: normal
     display: inline-block   
-.card__description
+.card-info__description
     p
         margin: 0
         font-style: italic
         font-size: 14px
-        padding: 10px 0
+        padding: 5px
         background: #EAE5E4
         display: block
+        line-height: 1.7
 .star
         background-image: url(../images/star.svg)
         width: 95px
@@ -330,22 +251,22 @@ form
         background-repeat: repeat-x
         display: inline-block
         vertical-align: middle
-.card__rating
+.card-info__rating
 
 
-.card__contact
+.card-contact
    display: flex
    flex-direction: column
    justify-content: space-between
    text-align: center
 
-.card__request
-.card__chat
+.card-contact__request
+.card-contact__chat
     a
         text-transform: uppercase
-.card__phone
+.card-contact__phone
     font-size: 16px
-.card__line
+.card-line
     background: #024578
     border: 1px solid #024578
     opacity: 0.25
@@ -353,11 +274,18 @@ form
     margin: 0 auto
 
 footer
-    & .footer__title
+    & .footer-items__title
         font-size: 30px
-        text-align: center
         text-transform: uppercase
-        text-decoration: underline 
+        text-decoration: underline
+        text-align: center
+        margin-bottom: 20px
+.footer__title
+    text-transform: uppercase
+    font-size: 36px
+    color:#000
+    text-align: center
+    margin-bottom: 20px         
 .footer-flex
     display: flex
     justify-content: space-around
@@ -366,6 +294,9 @@ footer
 .footer-desc
     width: 300px
     text-align: center
+    img
+        width: 80px
+        height: 80px
 .footer__links
     a
         color: #024578
@@ -380,11 +311,24 @@ footer
     font-weight: bold
     padding: 5px
     display: inline-block
-.footer__line
-    background: #024578
+    margin-bottom: 10px
+    font-size: 20px
+.footer-bottom__line
+    background: rgba(2, 69, 120, 0.7);
     min-height: 115px
 .footer-bottom__flex
-    display: flex        
-
+    display: flex
+    align-items: center
+    color:#fff
+    height: 115px
+    justify-content: space-around 
+.footer-bottom__item
+    p
+        margin: 0       
+    span
+        text-transform: uppercase
+        text-align: center
+        display: inline-block
+       
 
 

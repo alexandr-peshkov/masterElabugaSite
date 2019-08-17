@@ -1,0 +1,63 @@
+// header
+.header-line
+     background: rgba(2, 69, 120, 0.8)
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+     height: 82px
+     color: #ffffff    
+        
+
+.header-navigation
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    min-height: 82px
+    align-items: center
+.logo
+    background-image: url(../images/wall.svg)
+    background-position: 0 50%
+    background-size: 47px 47px
+    background-repeat: no-repeat
+    padding-left: 70px
+.logo__title
+    font-size: 21px
+    text-transform: uppercase
+.log__desc
+    text-transform: uppercase
+    font-size: 12px 
+.contact
+    line-height: 1.7
+    border-left: 3px solid $dark_blue
+    border-right: 3px solid $dark_blue
+    padding-left: 35px   
+    padding-right: 35px   
+.contact__geo
+    background-image: url(../images/location-pointer.svg)
+    background-size: contain
+    background-repeat: no-repeat
+    text-transform: uppercase
+    padding-left: 30px
+   
+.contact__geo span
+    border-bottom: 1px solid #fff
+.contact__phone
+    padding-left: 5px
+.navigation
+        ul
+            display: flex
+            flex-direction: row
+            list-style-type: none
+            a
+                color:#fff
+                text-decoration: none
+                display: inline-block
+                padding: 10px
+                text-transform: uppercase
+                font-weight: bold
+                font-size: 14px    
+
+                &.active
+                    color: $orange
+                &:hover
+                    text-decoration: underline
+                    
+// -------------------------------------------------------end header ---------------------------------------------------->
