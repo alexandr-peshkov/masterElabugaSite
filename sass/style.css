@@ -1,3 +1,191 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden], template {
+  display: none;
+}
+
+a {
+  background: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -15,8 +203,13 @@ a {
 }
 
 .wrap {
-  width: 1120px;
+  max-width: 1120px;
   margin: 0 auto;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
 }
 
 .header-line {
@@ -31,10 +224,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -90,10 +279,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   list-style-type: none;
 }
 
@@ -104,7 +289,7 @@ a {
   padding: 10px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .navigation ul a.active {
@@ -119,14 +304,42 @@ a {
   background-image: url(../images/electric.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 100vh;
-  display: -ms-grid;
-  display: grid;
+  min-height: 100vh;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #ffffff;
+}
+
+.background-block {
+  padding: 200px 0 0 0;
+}
+
+.mob-menu {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffffff;
-  margin-bottom: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  display: none;
+}
+
+.mob-menu .item {
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+  display: block;
 }
 
 .masters__title {
@@ -135,23 +348,38 @@ a {
   text-align: center;
   font-weight: bold;
   text-shadow: 3px 3px 4px #000000;
-  margin-top: 150px;
-  margin-bottom: 70px;
+  margin: 0 0 50px 0;
 }
 
 .masters-form {
-  margin-bottom: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.masters-form .masters-form__button {
+  background-color: #FF9200;
+  min-width: 9%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: url(../images/glass.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: #000;
+}
+
+input, select, option {
+  padding: 15px;
+  outline: none;
+}
+
+input[placeholder] {
+  font-size: 20px;
 }
 
 select[name="master"] {
-  width: 70%;
-  margin-right: 44px;
+  min-width: 90%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -160,19 +388,7 @@ select[name="master"] {
   background-repeat: no-repeat;
   background-position: 97% 50%;
   font-family: "Exo 2", sans-serif;
-}
-
-input, select, option {
-  padding: 20px;
-  outline: none;
-}
-
-option {
-  height: 200px;
-}
-
-input[placeholder] {
-  font-size: 20px;
+  margin-right: 1%;
 }
 
 .button {
@@ -259,7 +475,7 @@ input[placeholder] {
 
 .appeal {
   background-image: url(../images/substrate_bg.svg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0 0 50px 0;
 }
@@ -358,10 +574,6 @@ input[placeholder] {
   width: 330px;
   margin-right: 20px;
   font-size: 20px;
-}
-
-form a {
-  padding: 20px 70px;
 }
 
 .card-masters {
@@ -553,5 +765,114 @@ footer .footer-items__title {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+}
+
+@media (max-width: 1400px) {
+  .background {
+    background-image: url(../images/electric.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 700px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1366px) {
+  .background {
+    background-image: url(../images/electric.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1280px) {
+  .background {
+    background-image: url(../images/electric.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    color: #ffffff;
+  }
+  .background-block {
+    padding: 150px 0 0 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .background {
+    background-image: url(../images/electric.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    color: #ffffff;
+  }
+  .wrap {
+    max-width: 1120px;
+    margin: 0 20px;
+  }
+  .background-block {
+    padding: 150px 0 0 0;
+    margin: 0 20px;
+  }
+  ul.navigation-list {
+    display: none;
+  }
+  .header-navigation {
+    margin: 0 20px;
+  }
+  .mob-menu {
+    height: 50px;
+    width: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  .mob-menu .item {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    display: block;
+  }
+  .contact {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background {
+    background-image: url(../images/electric.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 600px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    color: #ffffff;
+  }
+  .background-block {
+    padding: 70px 0 0 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
