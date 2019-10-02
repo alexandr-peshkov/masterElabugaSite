@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Профессиональные услуги мастеров">
+    <link rel="stylesheet" href="sass/normalize.css">
     <!-- подключение основных стилей -->
     <link rel="stylesheet" href="sass/style.css">
     <!-- файл сброса стилей -->
@@ -66,15 +67,6 @@
             <div class="background-block">
                 <h1 class="masters__title"> Профессиональные мастера<br>
                     с Многолетним стажем</h1>
-                <form action="index.php" class="masters-form">
-                    <select name="master" id="name">
-                        <option class="master__option">Выберите мастера</option>
-                        <option>Сантехник</option>
-                        <option>Электрик</option>
-                    </select>
-                    <a href="#" class="masters-form__button"></a>
-                </form>
-                <div class="masters-work">Выполнено более<span>&nbsp 350</span> работ</div>
             </div>
         </div>
     </div>
@@ -213,7 +205,7 @@
                     заполните форму и мы вам перезвоним!</div>
                 <div class="form-time">(в течении 15 минут)</div>
                 <div class="form-field">
-                    <input type="text" id="phone" class="form-field__inputphone" placeholder="+7 (951)-898-88-11">
+                    <label for="phone"></label><input type="text" id="phone" class="form-field__inputphone" placeholder="+7 (951)-898-88-11">
                     <a href="" class="button">Жду звонка</a>
                 </div>
             </div>
@@ -235,7 +227,7 @@
                         <div class="card-info__name">Белоусов Константин Сергеевич</div>
 
                         <span>
-                            <div class="card-info__position">Слесарь - сантехник</div>
+                            <span class="card-info__position">Слесарь - сантехник</span>
                         </span>
                         <div class="card-info__experience">Стаж : 20 лет</div>
                         <div class="card-info__rating">Рейтинг : <span class="star"></span></div>
@@ -263,7 +255,7 @@
                         <div class="card-info__name">Белоусов Константин Сергеевич</div>
 
                         <span>
-                            <div class="card-info__position">Слесарь - сантехник</div>
+                            <span class="card-info__position">Слесарь - сантехник</span>
                         </span>
                         <div class="card-info__experience">Стаж : 20 лет</div>
                         <div class="card-info__rating">Рейтинг : <span class="star"></span></div>
@@ -291,7 +283,7 @@
                         <div class="card-info__name">Белоусов Константин Сергеевич</div>
 
                         <span>
-                            <div class="card-info__position">Слесарь - сантехник</div>
+                            <span class="card-info__position">Слесарь - сантехник</span>
                         </span>
                         <div class="card-info__experience">Стаж : 20 лет</div>
                         <div class="card-info__rating">Рейтинг : <span class="star"></span></div>

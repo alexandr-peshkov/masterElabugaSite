@@ -6,7 +6,6 @@ $orange : #FF9200
 $dark_blue : #125588
 $block_height: 250px
 
-@import "normalize"    
 
 body
     padding: 0
@@ -14,7 +13,7 @@ body
     font-family: $family2
     line-height: 1.4
     font-size: 16px
-    color:#000
+    color: #000
     text-rendering: optimizeLegibility
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
@@ -34,18 +33,17 @@ a
     align-content: center
     color: #ffffff
 .background-block
-    padding: 200px 0 0 0
+    padding: 100px 0 0 0
 
 // мобильное меню
 .mob-menu
     height: 50px
     width: 50px
-    display: flex
+    display: none
     align-items: center
     justify-content: center
     flex-direction: column
     cursor: pointer
-    display: none
     .item
         width: 40px
         height: 2px
@@ -57,7 +55,7 @@ a
 
 // мобильное меню         
 .masters__title
-    font-size: 40px
+    font-size: 35px
     text-transform: uppercase
     text-align: center
     font-weight: bold
@@ -69,22 +67,21 @@ a
     .masters-form__button
         background-color: $orange
         min-width: 9%  
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         background-image: url(../images/glass.svg)
         background-size: 30px
         background-repeat: no-repeat
         background-position: 50% 50%
-        color:#000 
-
+        color: #000
 input,select,option
     padding: 15px
     outline: none
-option
+option,
 input[placeholder]
-    font-size: 20px
+    font-size: 16px
 input[type="text"]
-    border:none
-    outline:none
+    border: none
+    outline: none
 select[name="master"]
     min-width: 90%
     appearance: none
@@ -93,25 +90,24 @@ select[name="master"]
     background-repeat: no-repeat
     background-position: 97% 50%
     font-family: $family
-    margin-right: 1%             
+    margin-right: 1%
+    color: #000
+
 .button
     background: $orange
     padding: 20px 70px 
     text-decoration: none
-    color:#fff
+    color: #fff
     text-transform: uppercase
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)            
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
 .masters__work
     font-size: 18px
     font-weight: bold
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     span
         font-size: 30px
-
-
 .services h2
-    font-size: 40px
+    font-size: 35px
     text-transform: uppercase
     text-align: center
     margin-bottom: 100px
@@ -131,8 +127,7 @@ select[name="master"]
         height: 170px
         width: 250px
 .services-catalog:last-child
-    margin-bottom: 0px     
-    
+    margin-bottom: 0
 .services-catalog__title
     margin: 20px 0
     text-align: center
@@ -142,14 +137,13 @@ select[name="master"]
     // text-transform: uppercase
 .services-catalog__buttons
     background: $orange
-    padding: 20px 0px
+    padding: 20px 0
     text-align: center
     color: #ffffff
-    display: inline-block 
-    text-decoration: none
+    display: inline-block
     text-transform: uppercase
     font-size: 14px
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50)
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.50)
     width: 100%
     text-decoration: underline
 
@@ -162,7 +156,7 @@ select[name="master"]
     padding: 0 0 50px 0
     h3
         text-align: center
-        font-size: 40px
+        font-size: 35px
         font-weight: bold
         text-transform: uppercase
         padding: 50px 0 
@@ -174,7 +168,7 @@ select[name="master"]
     grid-gap: 40px
    
 .appeal-item
-    color:#fff
+    color: #fff
    
 .appeal-content__title
     text-align: center
@@ -230,7 +224,7 @@ select[name="master"]
     h3
         padding: 50px 0
         text-align: center
-        font-size: 40px
+        font-size: 35px
         text-transform: uppercase
 .card-background
     background: #fff
@@ -241,8 +235,7 @@ select[name="master"]
     font-size: 14px
     justify-content: space-around
     align-content: center
-    padding: 20px    
-.card-img
+    padding: 20px
    
 .card-info__name
     font-size: 20px
@@ -254,8 +247,8 @@ select[name="master"]
 
 .card-info__position
     background: #FF9200
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    color:#fff
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+    color: #fff
     padding: 2px 5px
     font-weight: normal
     display: inline-block   
@@ -275,7 +268,6 @@ select[name="master"]
         background-repeat: repeat-x
         display: inline-block
         vertical-align: middle
-.card-info__rating
 
 
 .card-contact
@@ -284,7 +276,6 @@ select[name="master"]
    justify-content: space-between
    text-align: center
 
-.card-contact__request
 .card-contact__chat
     a
         text-transform: uppercase
