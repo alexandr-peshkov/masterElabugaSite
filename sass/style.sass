@@ -2,8 +2,10 @@
 $family : 'Exo 2', sans-serif
 $family2: 'Roboto Slab', serif
 //colors
-$orange : #FF9200
+$orange : orange
 $dark_blue : #125588
+$accent : #FFAF0F		
+
 $block_height: 250px
 
 
@@ -19,21 +21,30 @@ body
     -moz-osx-font-smoothing: grayscale
 
 a
-    display: block        
+    display: block
+h1
+    margin: 0
+    padding: 0            
 @import "grid"
 @import "header"
 
 // -------------------------------------------------------end header ---------------------------------------------------->
-
+.orange
+    background: #125588
+    padding: 5px
 .background
     background-image: url(../images/electric.svg)
     background-repeat: no-repeat
-    background-size: 100%
-    min-height: 100vh
+    background-size: cover
     align-content: center
+    
     color: #ffffff
 .background-block
-    padding: 100px 0 0 0
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    
 
 // мобильное меню
 .mob-menu
@@ -60,7 +71,6 @@ a
     text-align: center
     font-weight: bold
     text-shadow: 3px 3px 4px #000000
-    margin: 0 0 50px 0
 .masters-form
     display: flex
     margin-bottom: 50px    
@@ -78,7 +88,8 @@ input,select,option
     outline: none
 option,
 input[placeholder]
-    font-size: 16px
+    font-size: 26px
+    color: $dark_blue
 input[type="text"]
     border: none
     outline: none
@@ -94,12 +105,14 @@ select[name="master"]
     color: #000
 
 .button
-    background: $orange
+    background: $accent
     padding: 20px 70px 
     text-decoration: none
     color: #fff
     text-transform: uppercase
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+    cursor: pointer
+    font-size: 20px
 .masters__work
     font-size: 18px
     font-weight: bold
@@ -133,19 +146,20 @@ select[name="master"]
     text-align: center
     font-size: 20px
     text-decoration: none
-    color: #000
+    color: $dark_blue
     // text-transform: uppercase
 .services-catalog__buttons
-    background: $orange
+    background: $accent
     padding: 20px 0
     text-align: center
-    color: #ffffff
+    color: #000000
     display: inline-block
     text-transform: uppercase
     font-size: 14px
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.50)
+    // text-shadow: 0 4px 4px rgba(0, 0, 0, 0.50)
     width: 100%
     text-decoration: underline
+    
 
       //  ------------------------------------------------------третий блок----------------------------------------------------->
 
@@ -202,7 +216,7 @@ select[name="master"]
     text-align: center
     letter-spacing: 0.05em
     font-size: 36px
-    width: 760px
+    max-width: 760px
     margin-bottom: 10px
 .form-field
     display: flex
@@ -216,7 +230,7 @@ select[name="master"]
 .form-field__inputphone
     width: 330px
     margin-right: 20px
-    font-size: 20px
+    color: $dark_blue
 // ------------------------------------------------------четвертый блок ----------------------------------------------------->
 .card-masters
     background-image: url(../images/bricks.svg)
@@ -276,7 +290,7 @@ select[name="master"]
    justify-content: space-between
    text-align: center
 
-.card-contact__chat
+.card-contact__chat.form-title
     a
         text-transform: uppercase
 .card-contact__phone
@@ -285,7 +299,6 @@ select[name="master"]
     background: #024578
     border: 1px solid #024578
     opacity: 0.25
-    width: 1000px
     margin: 0 auto
 
 @import "footer"
