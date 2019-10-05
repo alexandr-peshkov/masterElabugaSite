@@ -129,7 +129,7 @@ h1 {
 }
 
 .background {
-  background-image: url(../images/electric.svg);
+  background-image: url(../images/electric.svservices-catalog__buttonsg);
   background-repeat: no-repeat;
   background-size: cover;
   -ms-flex-line-pack: center;
@@ -231,15 +231,16 @@ select[name="master"] {
   color: #000;
 }
 
-.button {
+.form-field__links {
   background: #FFAF0F;
   padding: 20px 70px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   font-size: 20px;
+  border-radius: 10px;
+  border-bottom: 5px solid #D77232;
 }
 
 .masters__work {
@@ -256,7 +257,6 @@ select[name="master"] {
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 100px;
 }
 
 .services-catalog a {
@@ -282,11 +282,13 @@ select[name="master"] {
 
 .services-catalog {
   margin-bottom: 50px;
+  max-width: 250px;
 }
 
 .services-catalog img {
   height: 170px;
   width: 250px;
+  margin-bottom: 20px;
 }
 
 .services-catalog:last-child {
@@ -299,6 +301,7 @@ select[name="master"] {
   font-size: 20px;
   text-decoration: none;
   color: #125588;
+  display: none;
 }
 
 .services-catalog__buttons {
@@ -311,6 +314,8 @@ select[name="master"] {
   font-size: 14px;
   width: 100%;
   text-decoration: underline;
+  border-radius: 10px;
+  border-bottom: 5px solid #D77232;
 }
 
 .appeal {
@@ -351,6 +356,8 @@ select[name="master"] {
 .appeal-block {
   background-color: rgba(2, 69, 120, 0.6);
   height: 250px;
+  border-radius: 10px;
+  border-bottom: 5px solid #125588;
 }
 
 .appeal-wrap {
@@ -414,6 +421,7 @@ select[name="master"] {
   width: 330px;
   margin-right: 20px;
   color: #125588;
+  border-radius: 10px;
 }
 
 .card-masters {

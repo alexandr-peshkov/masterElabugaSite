@@ -4,10 +4,9 @@ $family2: 'Roboto Slab', serif
 //colors
 $orange : orange
 $dark_blue : #125588
-$accent : #FFAF0F		
+$accent : #FFAF0F
 
 $block_height: 250px
-
 
 body
     padding: 0
@@ -24,7 +23,7 @@ a
     display: block
 h1
     margin: 0
-    padding: 0            
+    padding: 0
 @import "grid"
 @import "header"
 
@@ -33,18 +32,17 @@ h1
     background: #125588
     padding: 5px
 .background
-    background-image: url(../images/electric.svg)
+    background-image: url(../images/electric.svservices-catalog__buttonsg)
     background-repeat: no-repeat
     background-size: cover
     align-content: center
-    
+
     color: #ffffff
 .background-block
     height: 100vh
     display: flex
     align-items: center
     justify-content: center
-    
 
 // мобильное меню
 .mob-menu
@@ -60,11 +58,9 @@ h1
         height: 2px
         background-color: #fff
         margin: 5px 0
-        display: block 
+        display: block
 
-
-
-// мобильное меню         
+// мобильное меню
 .masters__title
     font-size: 35px
     text-transform: uppercase
@@ -73,10 +69,10 @@ h1
     text-shadow: 3px 3px 4px #000000
 .masters-form
     display: flex
-    margin-bottom: 50px    
+    margin-bottom: 50px
     .masters-form__button
         background-color: $orange
-        min-width: 9%  
+        min-width: 9%
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
         background-image: url(../images/glass.svg)
         background-size: 30px
@@ -104,15 +100,17 @@ select[name="master"]
     margin-right: 1%
     color: #000
 
-.button
+.form-field__links
     background: $accent
-    padding: 20px 70px 
+    padding: 20px 70px
     text-decoration: none
-    color: #fff
+    color: #000
     text-transform: uppercase
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
     cursor: pointer
     font-size: 20px
+    border-radius: 10px
+    border-bottom: 5px solid #D77232
+
 .masters__work
     font-size: 18px
     font-weight: bold
@@ -123,22 +121,25 @@ select[name="master"]
     font-size: 35px
     text-transform: uppercase
     text-align: center
-    margin-bottom: 100px
 .services-catalog
     a
-        text-decoration: none    
+        text-decoration: none
+
 .service
     display: flex
     flex-direction: row
     justify-content: space-between
     text-align: center
-    margin: 100px 0 0 0 
+    margin: 100px 0 0 0
     flex-wrap: wrap
 .services-catalog
     margin-bottom: 50px
+    max-width: 250px
     img
         height: 170px
         width: 250px
+        margin-bottom: 20px
+
 .services-catalog:last-child
     margin-bottom: 0
 .services-catalog__title
@@ -147,7 +148,7 @@ select[name="master"]
     font-size: 20px
     text-decoration: none
     color: $dark_blue
-    // text-transform: uppercase
+    display: none
 .services-catalog__buttons
     background: $accent
     padding: 20px 0
@@ -159,7 +160,8 @@ select[name="master"]
     // text-shadow: 0 4px 4px rgba(0, 0, 0, 0.50)
     width: 100%
     text-decoration: underline
-    
+    border-radius: 10px
+    border-bottom: 5px solid #D77232
 
       //  ------------------------------------------------------третий блок----------------------------------------------------->
 
@@ -173,23 +175,27 @@ select[name="master"]
         font-size: 35px
         font-weight: bold
         text-transform: uppercase
-        padding: 50px 0 
+        padding: 50px 0
         margin: 0
 .appeal-catalog
     display: grid
     justify-content: space-around
     grid-template-columns: 1fr 1fr 1fr
     grid-gap: 40px
-   
+
 .appeal-item
     color: #fff
-   
+
 .appeal-content__title
     text-align: center
     text-transform: uppercase
 .appeal-block
     background-color: rgba(2, 69, 120, 0.6)
-    height: 250px  
+    height: 250px
+    border-radius: 10px
+    border-bottom: 5px solid $dark_blue
+
+
 .appeal-wrap
     display: grid
     align-content: center
@@ -197,16 +203,16 @@ select[name="master"]
     height: 100%
     text-align: center
 .appeal-content img
-    margin-bottom: 10px 
+    margin-bottom: 10px
 
     // ------------------------------------------------------четвертый блок ----------------------------------------------------->
 
 .form-phone
     min-height: 400px
-    background: rgba(2, 69, 120, 0.5) 
-    color: #ffffff    
+    background: rgba(2, 69, 120, 0.5)
+    color: #ffffff
 .form-wrap
-    display: grid 
+    display: grid
     justify-content: center
     align-content: center
     min-height: 400px
@@ -221,16 +227,16 @@ select[name="master"]
 .form-field
     display: flex
     justify-content: center
- 
 
 .form-time
     font-size: 18px
     text-align: right
-    margin-bottom: 40px    
+    margin-bottom: 40px
 .form-field__inputphone
     width: 330px
     margin-right: 20px
     color: $dark_blue
+    border-radius: 10px
 // ------------------------------------------------------четвертый блок ----------------------------------------------------->
 .card-masters
     background-image: url(../images/bricks.svg)
@@ -250,7 +256,7 @@ select[name="master"]
     justify-content: space-around
     align-content: center
     padding: 20px
-   
+
 .card-info__name
     font-size: 20px
     text-transform: uppercase
@@ -265,7 +271,7 @@ select[name="master"]
     color: #fff
     padding: 2px 5px
     font-weight: normal
-    display: inline-block   
+    display: inline-block
 .card-info__description
     p
         margin: 0
@@ -276,19 +282,18 @@ select[name="master"]
         display: block
         line-height: 1.7
 .star
-        background-image: url(../images/star.svg)
-        width: 95px
-        height: 19px
-        background-repeat: repeat-x
-        display: inline-block
-        vertical-align: middle
-
+    background-image: url(../images/star.svg)
+    width: 95px
+    height: 19px
+    background-repeat: repeat-x
+    display: inline-block
+    vertical-align: middle
 
 .card-contact
-   display: flex
-   flex-direction: column
-   justify-content: space-between
-   text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    text-align: center
 
 .card-contact__chat.form-title
     a
@@ -302,8 +307,6 @@ select[name="master"]
     margin: 0 auto
 
 @import "footer"
-       
-
 
 // media
-@import "media"    
+@import "media"
