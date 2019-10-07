@@ -4,9 +4,11 @@ $family2: 'Roboto Slab', serif
 //colors
 $orange : orange
 $dark_blue : #125588
-$accent : #FFAF0F
-
-$block_height: 250px
+// $accent : #FFAF0F
+$accent : #3498db
+$accent_text: #fff
+$border_bottom : 7px solid #2980b9
+$nackground_header: rgba(2, 69, 120, 0.9)
 
 body
     padding: 0
@@ -32,7 +34,7 @@ h1
     background: #125588
     padding: 5px
 .background
-    background-image: url(../images/electric.svservices-catalog__buttonsg)
+    background-image: url(../images/electric.svg)
     background-repeat: no-repeat
     background-size: cover
     align-content: center
@@ -104,12 +106,12 @@ select[name="master"]
     background: $accent
     padding: 20px 70px
     text-decoration: none
-    color: #000
+    color: $accent_text
     text-transform: uppercase
     cursor: pointer
     font-size: 20px
     border-radius: 10px
-    border-bottom: 5px solid #D77232
+    border-bottom: $border_bottom
 
 .masters__work
     font-size: 18px
@@ -153,7 +155,7 @@ select[name="master"]
     background: $accent
     padding: 20px 0
     text-align: center
-    color: #000000
+    color: $accent_text
     display: inline-block
     text-transform: uppercase
     font-size: 14px
@@ -161,7 +163,7 @@ select[name="master"]
     width: 100%
     text-decoration: underline
     border-radius: 10px
-    border-bottom: 5px solid #D77232
+    border-bottom: $border_bottom
 
       //  ------------------------------------------------------третий блок----------------------------------------------------->
 
