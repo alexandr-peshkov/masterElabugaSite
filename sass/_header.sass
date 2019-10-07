@@ -1,6 +1,7 @@
 // header
 .header-line
-     background: #004d73
+     //background: #004d73
+     background: $dark_blue
      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
      height: 82px
      color: #ffffff
@@ -55,14 +56,22 @@
                 padding: 10px
                 text-transform: uppercase
                 font-weight: bold
-                font-size: 15px    
+                font-size: 15px
+                 
 
                 &.active
-                    color: $accent	
+                    color: $accent_text	
                     font-weight: 900
-                    text-decoration: underline
+                    text-decoration: none
+                    background: $accent
+                    border-radius: 10px
+                    border-bottom: $border_bottom
                 &:hover
-                    text-decoration: underline
-                    color: $accent
+                    color: $accent_text	
+                    font-weight: 900
+                    text-decoration: none
+                    background: $accent
+                    border-radius: 10px
+                    border-bottom: $border_bottom  
                     
 // -------------------------------------------------------end header ---------------------------------------------------->
