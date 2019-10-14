@@ -1,41 +1,12 @@
-@media (max-width: 1400px)
-    .background
-        background-image: url(../images/electric.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        align-content: center
-        color: #ffffff
 
-@media (max-width: 1366px)
-    .background
-        background-image: url(../images/electric.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        align-content: center
-        color: #ffffff
-
-@media (max-width: 1280px)
-    .background
-        background-image: url(../images/electric.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        align-content: center
-        color: #ffffff
-    .background-block
         
-
-@media (max-width: 1150px)
+@media (max-width: 1150px) // max-width: 1150px
     .background
         background-image: url(../images/electric.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        align-content: center
-        color: #ffffff
+        
     .wrap
         max-width: 1120px
         margin: 0 20px
-        
-    .background-block
         
     ul.navigation-list
         display: none
@@ -49,24 +20,72 @@
         justify-content: center
         flex-direction: column
         cursor: pointer
-        margin-left: 20px
+        box-shadow: 3px 3px 4px #000
        
         .item
             width: 40px
             height: 2px
-            background-color: #fff
+            background-color: #000
             margin: 5px 0
-            display: block        
-    .contact
-        margin-left: 20px  
+            display: block
+    .text-menu
+        text-transform: uppercase
 
-@media (max-width: 1024px)
+@media (max-width: 1070px) // max-width: 1070px
+    .services-catalog
+        max-width: 33%
+    .services-catalog:nth-child(7)
+        max-width: 50%
+    .services-catalog:nth-child(8)
+        max-width: 50%    
+
+@media (max-width: 950px) // max-width: 950px
     .background
-        background-image: url(../images/electric.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        align-content: center
-        color: #ffffff
-    .background-block
+        height: 300px
+
+    .services-catalog:nth-child(7)
+        max-width: 50%
+    .services-catalog:nth-child(8)
+        max-width: 50%
+    .footer-bottom__item > span
+        display: none
+    .footer__title
+        text-align: left
+                 
+
+@media (max-width: 850px) // max-width: 850px
+    .contact
+        display: none
+    .logo__desc
+        display: none
+    .logo__title
+        height: 82px
+        display: flex
+        align-items: center
+    .services-catalog:nth-child(7)
+        max-width: 47%
+    .services-catalog:nth-child(8)
+        max-width: 47%
+    .footer__title
+        font-size: 20px           
+
+@media (max-width: 750px) // max-width: 750px
+    .services h2 ,.masters__title
+        font-size: 25px
+    .services-catalog
+        max-width: 47%     
+    .services-catalog:nth-child(7)
+        max-width: 47%
+    .services-catalog:nth-child(8)
+        max-width: 47%    
+
+@media (max-width: 700px) // max-width: 700px
+    a.form-field__links
+        white-space: nowrap
+    .footer__title
+        font-size: 20px  
+    .footer__items
+        max-width: 33%      
+     
         
           

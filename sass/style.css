@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
@@ -8,6 +9,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 a {
@@ -17,6 +19,11 @@ a {
 h1 {
   margin: 0;
   padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wrap {
@@ -138,23 +145,30 @@ h1 {
 .background {
   background-image: url(../images/electric.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
   color: #ffffff;
-}
-
-.background-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  height: 400px;
+  padding-top: 82px;
+}
+
+.masters__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 3px 3px 4px #000000;
+  color: #fff;
 }
 
 .mob-menu {
@@ -172,22 +186,24 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
+  background: orange;
+  position: relative;
+}
+
+.mob-menu::before {
+  content: "меню";
+  position: absolute;
+  left: -70px;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 .mob-menu .item {
   width: 40px;
   height: 2px;
-  background-color: #fff;
+  background-color: #000;
   margin: 5px 0;
   display: block;
-}
-
-.masters__title {
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  text-shadow: 3px 3px 4px #000000;
 }
 
 .masters-form {
@@ -266,10 +282,6 @@ select[name="master"] {
   text-align: center;
 }
 
-.services-catalog a {
-  text-decoration: none;
-}
-
 .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,7 +294,7 @@ select[name="master"] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: center;
-  margin: 100px 0 0 0;
+  margin: 50px 0 0 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -296,6 +308,10 @@ select[name="master"] {
   height: 170px;
   width: 250px;
   margin-bottom: 20px;
+}
+
+.services-catalog a {
+  text-decoration: none;
 }
 
 .services-catalog:last-child {
@@ -555,7 +571,6 @@ footer .footer-items__title {
   text-transform: uppercase;
   font-size: 25px;
   color: #000;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -567,6 +582,10 @@ footer .footer-items__title {
       justify-content: space-around;
   padding: 20px 0;
   height: 300px;
+}
+
+.footer__items {
+  width: 33%;
 }
 
 .footer-desc {
@@ -628,47 +647,9 @@ footer .footer-items__title {
   display: inline-block;
 }
 
-@media (max-width: 1400px) {
-  .background {
-    background-image: url(../images/electric.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #ffffff;
-  }
-}
-
-@media (max-width: 1366px) {
-  .background {
-    background-image: url(../images/electric.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #ffffff;
-  }
-}
-
-@media (max-width: 1280px) {
-  .background {
-    background-image: url(../images/electric.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #ffffff;
-  }
-}
-
 @media (max-width: 1150px) {
   .background {
     background-image: url(../images/electric.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #ffffff;
   }
   .wrap {
     max-width: 1120px;
@@ -697,28 +678,102 @@ footer .footer-items__title {
         -ms-flex-direction: column;
             flex-direction: column;
     cursor: pointer;
-    margin-left: 20px;
+    -webkit-box-shadow: 3px 3px 4px #000;
+            box-shadow: 3px 3px 4px #000;
   }
   .mob-menu .item {
     width: 40px;
     height: 2px;
-    background-color: #fff;
+    background-color: #000;
     margin: 5px 0;
     display: block;
   }
-  .contact {
-    margin-left: 20px;
+  .text-menu {
+    text-transform: uppercase;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1070px) {
+  .services-catalog {
+    max-width: 33%;
+  }
+  .services-catalog:nth-child(7) {
+    max-width: 50%;
+  }
+  .services-catalog:nth-child(8) {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 950px) {
   .background {
-    background-image: url(../images/electric.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    color: #ffffff;
+    height: 300px;
+  }
+  .services-catalog:nth-child(7) {
+    max-width: 50%;
+  }
+  .services-catalog:nth-child(8) {
+    max-width: 50%;
+  }
+  .footer-bottom__item > span {
+    display: none;
+  }
+  .footer__title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact {
+    display: none;
+  }
+  .logo__desc {
+    display: none;
+  }
+  .logo__title {
+    height: 82px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services-catalog:nth-child(7) {
+    max-width: 47%;
+  }
+  .services-catalog:nth-child(8) {
+    max-width: 47%;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .services h2, .masters__title {
+    font-size: 25px;
+  }
+  .services-catalog {
+    max-width: 47%;
+  }
+  .services-catalog:nth-child(7) {
+    max-width: 47%;
+  }
+  .services-catalog:nth-child(8) {
+    max-width: 47%;
+  }
+}
+
+@media (max-width: 700px) {
+  a.form-field__links {
+    white-space: nowrap;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__items {
+    max-width: 33%;
   }
 }
 /*# sourceMappingURL=style.css.map */

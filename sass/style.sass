@@ -20,12 +20,17 @@ body
     text-rendering: optimizeLegibility
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+    height: 100%
 
 a
     display: block
 h1
     margin: 0
     padding: 0
+img
+    max-width: 100%
+    height: auto
+
 @import "grid"
 @import "header"
 
@@ -36,16 +41,21 @@ h1
 .background
     background-image: url(../images/electric.svg)
     background-repeat: no-repeat
-    background-size: cover
+    background-size: 100%
     align-content: center
-
     color: #ffffff
-.background-block
     display: flex
-    align-items: center
     justify-content: center
-    height: 600px
-
+    align-items: center
+    max-width: 100%
+    height: 400px
+    padding-top: 82px
+.masters__title
+    font-size: 30px
+    text-transform: uppercase
+    text-align: center
+    text-shadow: 3px 3px 4px #000000
+    color:#fff
 // мобильное меню
 .mob-menu
     height: 50px
@@ -55,20 +65,26 @@ h1
     justify-content: center
     flex-direction: column
     cursor: pointer
+    background: orange
+    position: relative
+     
+    &::before
+        content: "меню"
+        position: absolute
+        left: -70px
+        text-transform: uppercase
+        font-weight: lighter
     .item
         width: 40px
         height: 2px
-        background-color: #fff
+        background-color: #000
         margin: 5px 0
         display: block
 
+
+
 // мобильное меню
-.masters__title
-    font-size: 35px
-    text-transform: uppercase
-    text-align: center
-    font-weight: bold
-    text-shadow: 3px 3px 4px #000000
+
 .masters-form
     display: flex
     margin-bottom: 50px
@@ -123,16 +139,13 @@ select[name="master"]
     font-size: 35px
     text-transform: uppercase
     text-align: center
-.services-catalog
-    a
-        text-decoration: none
-
+    
 .service
     display: flex
     flex-direction: row
     justify-content: space-between
     text-align: center
-    margin: 100px 0 0 0
+    margin: 50px 0 0 0
     flex-wrap: wrap
 .services-catalog
     margin-bottom: 50px
@@ -141,6 +154,10 @@ select[name="master"]
         height: 170px
         width: 250px
         margin-bottom: 20px
+    a
+        text-decoration: none
+    &:nth-child(7)
+                
 
 .services-catalog:last-child
     margin-bottom: 0
