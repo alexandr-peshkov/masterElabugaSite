@@ -26,6 +26,10 @@ img {
   height: auto;
 }
 
+.center {
+  text-align: center;
+}
+
 .wrap {
   max-width: 1120px;
   margin: 0 auto;
@@ -572,6 +576,7 @@ footer .footer-items__title {
   font-size: 25px;
   color: #000;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .footer-flex {
@@ -718,9 +723,6 @@ footer .footer-items__title {
   .footer-bottom__item > span {
     display: none;
   }
-  .footer__title {
-    text-align: left;
-  }
 }
 
 @media (max-width: 850px) {
@@ -766,14 +768,28 @@ footer .footer-items__title {
 }
 
 @media (max-width: 700px) {
+  .form-field {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   a.form-field__links {
     white-space: nowrap;
+    margin-top: 20px;
   }
   .footer__title {
     font-size: 20px;
   }
   .footer__items {
     max-width: 33%;
+  }
+  .form-field__inputphone {
+    text-align: center;
+  }
+  .background {
+    display: none;
+  }
+  .service {
+    margin-top: 100px;
   }
 }
 /*# sourceMappingURL=style.css.map */
