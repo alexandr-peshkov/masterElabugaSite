@@ -1,7 +1,7 @@
 // variables
 $family : 'Exo 2', sans-serif
 $family2: 'Roboto Slab', serif
-$familyRoundsBlack : "RoundsBlack" 
+$familyRoundsBlack : "RoundsBlack"
 //colors
 $orange : orange
 $dark_blue : #125588
@@ -31,10 +31,11 @@ body
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     height: 100%
-    
 
 a
-    display: block
+    display: inline-block
+    color: #fff
+    text-decoration: none
 h1
     margin: 0
     padding: 0
@@ -192,6 +193,7 @@ select[name="master"]
     text-decoration: underline
     border-radius: 10px
     border-bottom: $border_bottom
+    min-width: 200px
 .services-catalog__buttons:hover
     background: #fff200
     border-bottom: 5px solid orange
@@ -332,6 +334,8 @@ select[name="master"]
         text-transform: uppercase
 .card-contact__phone
     font-size: 16px
+.card-contact__phone a
+    color: #fff
 .card-line
     background: #024578
     border: 1px solid #024578
