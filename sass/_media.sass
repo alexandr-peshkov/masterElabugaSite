@@ -13,8 +13,8 @@
     .header-navigation
         margin: 0 20px
     .mob-menu
-        height: 50px
-        width: 50px
+        min-height: 50px
+        min-width: 50px
         display: flex
         align-items: center
         justify-content: center
@@ -68,23 +68,37 @@
         font-size: 20px           
 
 @media (max-width: 750px) // max-width: 750px
-    .services h2 ,.masters__title
-        font-size: 25px
     .services-catalog
         max-width: 47%     
     .services-catalog:nth-child(7)
         max-width: 47%
     .services-catalog:nth-child(8)
-        max-width: 47%    
+        max-width: 47%
+    .services h2 
+        padding-top: 130px
+        font-size: 20px
+    .appeal h3
+        font-size: 20px
+    
+    .services h2
+        padding: 20px 0    
+                     
 
 @media (max-width: 700px) // max-width: 700px
+    .appeal-item 
+        color:  #fff;
+        width: 47%
+        margin: 9px
+    .form-time
+        text-align: center    
     .form-field
         flex-wrap: wrap
     a.form-field__links
         white-space: nowrap
         margin-top: 20px
+        font-size: 16px
     .footer__title
-        font-size: 20px  
+        font-size: 16px  
     .footer__items
         max-width: 33%
     .form-field__inputphone
@@ -92,7 +106,55 @@
     .background
         display: none       
     .service
-        margin-top: 100px        
-     
-        
-          
+        margin-top: 50px
+    .form-title
+        font-size: 20px
+    .footer__links a
+        font-size: 14px
+    .footer-desc
+        font-size: 14px
+    .footer-bottom__flex
+        font-size: 14px            
+                        
+@media (max-width: 640px) // max-width: 640px
+        .appeal-item 
+            color:  #fff
+            width: 100%
+            margin: 10px 0
+        .form-field__inputphone
+            margin-right: 0
+            
+@media (max-width: 600px) // max-width: 600px
+    .services h2
+        display: none
+    .service
+        margin-top: 100px
+
+@media (max-width: 500px) // max-width: 500px
+    &::before
+        content: "меню"
+        position: absolute
+        left: -70px
+        text-transform: uppercase
+        font-weight: lighter
+        display: none
+    .services-catalog
+        max-width: 100%
+        width: 100%
+    .services-catalog__buttons
+        padding: 10px 0
+        display: inline-block
+        width: 50%
+        font-size: 12px
+    .services-catalog:nth-child(7)
+        max-width: 100%
+    .services-catalog:nth-child(8)
+        max-width: 100%
+        margin-bottom: 20px
+    .footer__title
+        font-size: 14px
+    .logo__title
+        font-size: 16px
+    .logo
+        padding-left: 60px                    
+                          
