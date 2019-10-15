@@ -1,6 +1,7 @@
 // variables
 $family : 'Exo 2', sans-serif
 $family2: 'Roboto Slab', serif
+$familyRoundsBlack : "RoundsBlack" 
 //colors
 $orange : orange
 $dark_blue : #125588
@@ -9,6 +10,15 @@ $accent : $orange
 $accent_text: #000
 $border_bottom : 5px solid #ff8000
 $nackground_header: rgba(2, 69, 120, 0.9)
+
+@font-face
+    font-family: "RoundsBlack"
+    src: url("../fonts/RoundsBlack.eot")
+    src: url("../fonts/RoundsBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RoundsBlack.woff") format("woff"),
+    url("../fonts/RoundsBlack.ttf") format("truetype")
+    font-style: normal
+    font-weight: normal
 
 body
     padding: 0
@@ -21,6 +31,7 @@ body
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
     height: 100%
+    
 
 a
     display: block
@@ -31,7 +42,7 @@ img
     max-width: 100%
     height: auto
 .center
-    text-align: center    
+    text-align: center
 
 @import "grid"
 @import "header"
@@ -53,11 +64,12 @@ img
     height: 400px
     padding-top: 82px
 .masters__title
-    font-size: 30px
+    font-size: 35px
     text-transform: uppercase
     text-align: center
     text-shadow: 3px 3px 4px #000000
-    color:#fff
+    color: #fff
+    font-family: $familyRoundsBlack
 // мобильное меню
 .mob-menu
     height: 50px
@@ -69,7 +81,7 @@ img
     cursor: pointer
     background: orange
     position: relative
-     
+
     &::before
         content: "меню"
         position: absolute
@@ -82,8 +94,6 @@ img
         background-color: #000
         margin: 5px 0
         display: block
-
-
 
 // мобильное меню
 
@@ -141,9 +151,9 @@ select[name="master"]
     font-size: 35px
     text-transform: uppercase
     text-align: center
-    margin: 0;
-    padding-top: 50px;
-    
+    margin: 0
+    padding-top: 50px
+
 .service
     display: flex
     flex-direction: row
@@ -161,7 +171,6 @@ select[name="master"]
     a
         text-decoration: none
     &:nth-child(7)
-                
 
 .services-catalog:last-child
     margin-bottom: 0
@@ -180,7 +189,6 @@ select[name="master"]
     text-transform: uppercase
     font-size: 14px
     // text-shadow: 0 4px 4px rgba(0, 0, 0, 0.50)
-    width: 100%
     text-decoration: underline
     border-radius: 10px
     border-bottom: $border_bottom
@@ -188,7 +196,7 @@ select[name="master"]
     background: #fff200
     border-bottom: 5px solid orange
     transition: 1s
-    
+
       //  ------------------------------------------------------третий блок----------------------------------------------------->
 
 .appeal
@@ -221,13 +229,13 @@ select[name="master"]
     min-height: 170px
     border-radius: 10px
     border-bottom: 5px solid $dark_blue
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex
+    justify-content: center
+    align-items: center
     padding: 10px
 
 .appeal-wrap
-    
+
 .appeal-content img
     margin-bottom: 10px
 
