@@ -28,16 +28,29 @@
             background-color: #000
             margin: 5px 0
             display: block
+    .nav-list
+        display: flex
+        flex-direction: column
+        height: 100vh
+        align-items: center
+        position: fixed
+        top: 82px;
+        background: $dark_blue
+        min-width: 250px
+        height: 100vh
+        right: -250px
+        border-left: $border_bottom_light
     .text-menu
         text-transform: uppercase
+            
     
 @media (max-width: 1070px) // max-width: 1070px // TODO max-width: 1070px
     .services-catalog
         max-width: 33%
-    .services-catalog:nth-child(7)
-        max-width: 50%
-    .services-catalog:nth-child(8)
-        max-width: 50%    
+    // .services-catalog:nth-child(7)
+    //     max-width: 50%
+    // .services-catalog:nth-child(8)
+    //     max-width: 50%    
 
 @media (max-width: 950px) // max-width: 950px // TODO max-width: 950px
     .background

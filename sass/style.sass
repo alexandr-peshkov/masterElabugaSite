@@ -1,4 +1,4 @@
-// variables
+// TODO variables
 $family : 'Exo 2', sans-serif
 $family2: 'Roboto Slab', serif
 $familyRoundsBlack : "RoundsBlack"
@@ -9,17 +9,19 @@ $dark_blue : #125588
 $accent : $orange
 $accent_text: #000
 $border_bottom : 5px solid #ff8000
+$border_bottom_light : 5px solid #2980b9
 $nackground_header: rgba(2, 69, 120, 0.9)
 
 @font-face
     font-family: "RoundsBlack"
     src: url("../fonts/RoundsBlack.eot")
-    src: url("../fonts/RoundsBlack.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/RoundsBlack.woff") format("woff"),
-    url("../fonts/RoundsBlack.ttf") format("truetype")
+    src: url("../fonts/RoundsBlack.eot?#iefix")format("embedded-opentype")
+    src: url("../fonts/RoundsBlack.woff") format("woff")
+    src: ("../fonts/RoundsBlack.ttf") format("truetype")
     font-style: normal
     font-weight: normal
-
+*
+    box-sizing: border-box
 body
     padding: 0
     margin: 0
@@ -44,6 +46,9 @@ img
     height: auto
 .center
     text-align: center
+ul
+    list-style-type: none
+    padding: 0    
 
 @import "grid"
 @import "header"
@@ -71,7 +76,7 @@ img
     text-shadow: 3px 3px 4px #000000
     color: #fff
     font-family: $familyRoundsBlack
-// мобильное меню
+// TODO мобильное меню
 .mob-menu
     height: 50px
     width: 50px
@@ -89,12 +94,48 @@ img
         left: -70px
         text-transform: uppercase
         font-weight: lighter
+        font-family: $family
     .item
         width: 40px
         height: 2px
         background-color: #000
         margin: 5px 0
         display: block
+    
+    
+.nav-list
+    position: absolute;
+    top: 82px;
+    background: $dark_blue;
+    min-width: 250px
+    height: 100vh;
+    right: 0px;
+    display: none
+    border-left: $border_bottom_light
+
+.nav-list__links li
+    border-bottom: $border_bottom_light
+    width: 100px
+    padding: 5px
+    transition: 1s
+.nav-list__links li:hover
+    border-bottom: $border_bottom
+.nav-list__links a
+    font-size: 18px
+    font-family: $family
+    color: #fff
+.mob-navigation
+    font-family: $family
+    text-transform: uppercase
+    text-align: center
+    background: $orange
+    padding: 10px
+    color: $accent_text
+    border-bottom: $border_bottom
+    width: 100%
+
+            
+              
 
 // мобильное меню
 
@@ -171,7 +212,6 @@ select[name="master"]
         margin-bottom: 20px
     a
         text-decoration: none
-    &:nth-child(7)
 
 .services-catalog:last-child
     margin-bottom: 0

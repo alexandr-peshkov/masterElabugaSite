@@ -2,9 +2,16 @@
 @font-face {
   font-family: "RoundsBlack";
   src: url("../fonts/RoundsBlack.eot");
-  src: url("../fonts/RoundsBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RoundsBlack.woff") format("woff"), url("../fonts/RoundsBlack.ttf") format("truetype");
+  src: url("../fonts/RoundsBlack.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/RoundsBlack.woff") format("woff");
+  src: "../fonts/RoundsBlack.ttf" format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -38,6 +45,11 @@ img {
 
 .center {
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .wrap {
@@ -213,6 +225,7 @@ img {
   left: -70px;
   text-transform: uppercase;
   font-weight: lighter;
+  font-family: "Exo 2", sans-serif;
 }
 
 .mob-menu .item {
@@ -221,6 +234,46 @@ img {
   background-color: #000;
   margin: 5px 0;
   display: block;
+}
+
+.nav-list {
+  position: absolute;
+  top: 82px;
+  background: #125588;
+  min-width: 250px;
+  height: 100vh;
+  right: 0px;
+  display: none;
+  border-left: 5px solid #2980b9;
+}
+
+.nav-list__links li {
+  border-bottom: 5px solid #2980b9;
+  width: 100px;
+  padding: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.nav-list__links li:hover {
+  border-bottom: 5px solid #ff8000;
+}
+
+.nav-list__links a {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  color: #fff;
+}
+
+.mob-navigation {
+  font-family: "Exo 2", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background: orange;
+  padding: 10px;
+  color: #000;
+  border-bottom: 5px solid #ff8000;
+  width: 100%;
 }
 
 .masters-form {
@@ -710,6 +763,26 @@ footer .footer-items__title {
     margin: 5px 0;
     display: block;
   }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 82px;
+    background: #125588;
+    min-width: 250px;
+    height: 100vh;
+    right: -250px;
+    border-left: 5px solid #2980b9;
+  }
   .text-menu {
     text-transform: uppercase;
   }
@@ -718,12 +791,6 @@ footer .footer-items__title {
 @media (max-width: 1070px) {
   .services-catalog {
     max-width: 33%;
-  }
-  .services-catalog:nth-child(7) {
-    max-width: 50%;
-  }
-  .services-catalog:nth-child(8) {
-    max-width: 50%;
   }
 }
 
