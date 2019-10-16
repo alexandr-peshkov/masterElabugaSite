@@ -17,9 +17,10 @@ $nackground_header: rgba(2, 69, 120, 0.9)
     src: url("../fonts/RoundsBlack.eot")
     src: url("../fonts/RoundsBlack.eot?#iefix")format("embedded-opentype")
     src: url("../fonts/RoundsBlack.woff") format("woff")
-    src: ("../fonts/RoundsBlack.ttf") format("truetype")
+    src: url("../fonts/RoundsBlack.ttf") format("truetype")
     font-style: normal
     font-weight: normal
+
 *
     box-sizing: border-box
 body
@@ -48,11 +49,11 @@ img
     text-align: center
 ul
     list-style-type: none
-    padding: 0    
-
+    padding: 0
+// TODO import
 @import "grid"
 @import "header"
-@import "mobil"
+@import "mobile"
 
 // -------------------------------------------------------end header ---------------------------------------------------->
 .orange
@@ -102,15 +103,14 @@ ul
         background-color: #000
         margin: 5px 0
         display: block
-    
-    
+
 .nav-list
-    position: absolute;
-    top: 82px;
-    background: $dark_blue;
+    position: absolute
+    top: 82px
+    background: $dark_blue
     min-width: 250px
-    height: 100vh;
-    right: 0px;
+    height: 100vh
+    right: 0px
     display: none
     border-left: $border_bottom_light
 
@@ -134,9 +134,6 @@ ul
     color: $accent_text
     border-bottom: $border_bottom
     width: 100%
-
-            
-              
 
 // мобильное меню
 
@@ -269,7 +266,7 @@ select[name="master"]
     text-transform: uppercase
 .appeal-block
     background-color: rgba(2, 69, 120, 0.6)
-    min-height: 170px
+    min-height: 190px
     border-radius: 10px
     border-bottom: 5px solid $dark_blue
     display: flex

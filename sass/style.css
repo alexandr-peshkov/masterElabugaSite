@@ -4,7 +4,7 @@
   src: url("../fonts/RoundsBlack.eot");
   src: url("../fonts/RoundsBlack.eot?#iefix") format("embedded-opentype");
   src: url("../fonts/RoundsBlack.woff") format("woff");
-  src: "../fonts/RoundsBlack.ttf" format("truetype");
+  src: url("../fonts/RoundsBlack.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -166,7 +166,7 @@ ul {
 }
 
 #show {
-  background-color: transparent;
+  background-color: orange;
   border: 0;
   color: #fff;
   text-transform: uppercase;
@@ -177,7 +177,39 @@ ul {
   right: 10px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 10000;
+  display: none;
+  height: 40px;
+  width: 50px;
+}
+
+.mobmynavigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.mobmynavigation ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.mobmynavigation ul li a {
+  font-family: "Exo 2", sans-serif;
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-bottom: 5px solid #2980b9;
+}
+
+.mobmynavigation ul li a:hover {
+  border-bottom: 5px solid #ff8000;
 }
 
 .navigation {
@@ -587,7 +619,7 @@ select[name="master"] {
 
 .appeal-block {
   background-color: rgba(2, 69, 120, 0.6);
-  min-height: 170px;
+  min-height: 190px;
   border-radius: 10px;
   border-bottom: 5px solid #125588;
   display: -webkit-box;
@@ -866,6 +898,25 @@ footer .footer-items__title {
   .header-navigation {
     margin: 0 20px;
   }
+  #show {
+    background-color: orange;
+    border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: block;
+    height: 40px;
+    z-index: 10000;
+    border-bottom: 5px solid #ff8000;
+    -webkit-box-shadow: 2px 2px 2px #000;
+            box-shadow: 2px 2px 2px #000;
+  }
   .mob-menu {
     min-height: 50px;
     min-width: 50px;
@@ -886,11 +937,11 @@ footer .footer-items__title {
     -webkit-box-shadow: 3px 3px 4px #000;
             box-shadow: 3px 3px 4px #000;
   }
-  .mob-menu .item {
-    width: 40px;
+  .item {
+    width: 35px;
     height: 2px;
     background-color: #000;
-    margin: 5px 0;
+    margin: 8px 0;
     display: block;
   }
   .nav-list {
@@ -1038,7 +1089,7 @@ footer .footer-items__title {
     width: 100%;
     margin: 10px 0;
   }
-  .form-field__inputphone {
+  .appeal-item .form-field__inputphone {
     margin-right: 0;
   }
 }
