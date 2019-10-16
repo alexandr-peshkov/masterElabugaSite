@@ -1,19 +1,20 @@
 
-//TODO мобильное меню js
+// TODO мобильное меню js
+$(document).ready(function () {
+    $("#phone").mask(" +7 (999)-999-99-99");
+});
 
-window.onload = function () {
-    
-    $(document).ready(function () {
-        $("#phone").mask(" +7 (999)-999-99-99");
-    });
 
-    document.querySelector(".mob-menu").onclick = showMenu;
-    document.querySelector(".mob-menu").onclick = hideMenu;
+var $btn = document.getElementById('show');
+var $nav = document.getElementById('nav');
 
-    function showMenu() {
-        document.querySelector(".nav-list").style.right = "0";
-    };
-    function hideMenu() {
-        document.querySelector(".nav-list").style.right = "-250px";
-    };
-};
+$btn.addEventListener('click', function() {
+    $nav.classList.toggle('active');
+});
+
+/*<div id="nav" class="navigation">
+                    <div class="navigation__inner">
+                        <!--   Content   -->
+                    </div>
+                </div>
+                <button id="show">меню</button> */
